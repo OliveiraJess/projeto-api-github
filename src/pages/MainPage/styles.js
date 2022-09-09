@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 export const Container = styled.div`
 align-items: center;
@@ -42,7 +44,7 @@ width: 100%;
 }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
 align-items: center;
 background: transparent;
 border: 3px solid ${(props) => props.theme.colors.text};
