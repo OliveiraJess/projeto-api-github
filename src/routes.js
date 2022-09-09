@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Main from './pages/Main';
+import MainPage from './pages/MainPage';
 
 export default function Routes() {
   return (
     <Router>
       <Switch>
         <Route path="/">
-          <Main />
+          <MainPage />
         </Route>
       </Switch>
     </Router>
