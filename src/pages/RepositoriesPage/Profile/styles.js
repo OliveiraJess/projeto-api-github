@@ -41,3 +41,21 @@ font-weight: normal;
     display: none;
 }
 `;
+
+export const Inner = styled.div`
+padding: 1rem;
+
+@media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    display: none;
+}
+`;
+
+export const Data = styled.p`
+align-items: center;
+display: flex;
+line-height: 1.5;
+
+svg {
+    margin-right: 10px;
+}
+`;
