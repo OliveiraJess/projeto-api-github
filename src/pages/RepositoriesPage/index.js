@@ -3,8 +3,10 @@ import { Sidebar, Container, Main } from './styles';
 import Profile from "./Profile";
 import Filter from "./Filter";
 import Repositories from "./Repositories";
+import { getLangsFrom } from "../../services/api";
 
 const RepositoriesPage = () => {
+
     const user = {
         login: 'OliveiraJess',
         name: 'Jéssica de Oliveira',
@@ -12,15 +14,56 @@ const RepositoriesPage = () => {
         followers: 30,
         following: 10,
         company: null,
-        blog: '',
+        blog: 'https://www.linkedin.com/in/jessica-de-oliveira/',
         location: 'Orleans - SC'
-    }
+    };
+
+    const repositories = [
+        {
+            name: 'Repo 1',
+            description: 'descricao 1',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'javascript',
+        },
+        {
+            name: 'Repo 2',
+            description: 'descricao 2',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'javascript',
+        },
+        {
+            name: 'Repo 3',
+            description: 'descricao 3',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'Typescript',
+        },
+        {
+            name: 'Repo 4',
+            description: 'descricao 4',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'Ruby',
+        },
+        {
+            name: 'Repo 5',
+            description: 'descricao 5',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'java',
+        },
+        {
+            name: 'Repo 6',
+            description: 'descricao 6',
+            html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+            language: 'java',
+        },
+    ];
+
+    const languages = getLangsFrom(repositories);
 
     return (
         <Container>
             <Sidebar>
                 <Profile user={user} />
-                <Filter />
+                <Filter languages={languages} />
             </Sidebar>
             <Main>
                 <Repositories />
