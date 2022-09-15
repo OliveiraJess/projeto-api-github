@@ -20,36 +20,42 @@ const RepositoriesPage = () => {
 
     const repositories = [
         {
+            id: '1',
             name: 'Repo 1',
             description: 'descricao 1',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
             language: 'javascript',
         },
         {
+            id: '2',
             name: 'Repo 2',
             description: 'descricao 2',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
             language: 'javascript',
         },
         {
+            id: '3',
             name: 'Repo 3',
             description: 'descricao 3',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
             language: 'Typescript',
         },
         {
+            id: '4',
             name: 'Repo 4',
             description: 'descricao 4',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
-            language: 'Ruby',
+            language: '',
         },
         {
+            id: '5',
             name: 'Repo 5',
             description: 'descricao 5',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
             language: 'java',
         },
         {
+            id: '6',
             name: 'Repo 6',
             description: 'descricao 6',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
@@ -66,7 +72,7 @@ const RepositoriesPage = () => {
                 <Filter languages={languages} />
             </Sidebar>
             <Main>
-                <Repositories />
+                <Repositories repositories={repositories} />
             </Main>
         </Container>
     )
