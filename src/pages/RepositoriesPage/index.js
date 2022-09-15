@@ -45,7 +45,7 @@ const RepositoriesPage = () => {
             name: 'Repo 4',
             description: 'descricao 4',
             html_url: 'https://www.linkedin.com/in/jessica-de-oliveira/',
-            language: '',
+            language: null,
         },
         {
             id: '5',

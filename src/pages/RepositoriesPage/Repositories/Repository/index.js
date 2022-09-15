@@ -16,7 +16,7 @@ const Repository = ({ repository }) => (
 
 Repository.propTypes = {
     repository: PropTypes.shape({
-        id: PropTypes.number.isRequired,
+        id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         html_url: PropTypes.string.isRequired,
