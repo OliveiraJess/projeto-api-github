@@ -1,6 +1,6 @@
 {
-  "short_name": "Aplicação React",
-  "name": "Template básico Dev Samurai",
+  "short_name": "Consulta API Github",
+  "name": "Template básico",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo1.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo2.png",
       "type": "image/png",
       "sizes": "512x512"
     }
