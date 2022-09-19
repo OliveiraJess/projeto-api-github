@@ -7,6 +7,8 @@ const api = axios.create({
 
 export default api;
 
+export const getUser = async (login) => api.get(`/users/${login}`);
+
 export const getLangsFrom = (repositories) => {
 
   let stats = repositories

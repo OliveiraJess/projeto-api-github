@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const Loading = styled.div`
+align-items: center;
+display: flex;
+justify-content: center;
+min-height: 100vh;
+`;
+
 export const Container = styled.main`
 display: flex;
 min-height: 100vh;
@@ -11,24 +18,23 @@ min-height: 100vh;
 
 export const Sidebar = styled.aside`
 background: ${(props) => props.theme.colors.background};
-max-heigth: 100vh;
+max-height: 100vh;
 min-width: 20rem;
 overflow-y: hidden;
 `;
 
 export const Main = styled.section`
 background: ${(props) => props.theme.colors.container};
-heigth: 100vh;
+height: 100vh;
 overflow-y: hidden;
 padding: 40px;
 width: 100%;
 
 @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
-    heigth: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
     padding: 40px 20px;
 }
-
 `;

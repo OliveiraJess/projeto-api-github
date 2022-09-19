@@ -1,24 +1,39 @@
-import React, { useState } from "react";
-import { Sidebar, Container, Main } from './styles';
+import React, { useState, useEffect } from "react";
+import { Sidebar, Container, Main, Loading } from './styles';
 import Profile from "./Profile";
 import Filter from "./Filter";
 import Repositories from "./Repositories";
-import { getLangsFrom } from "../../services/api";
+import { getLangsFrom, getUser } from "../../services/api";
 
 const RepositoriesPage = () => {
 
+    const [user, setUser] = useState();
     const [currentLanguage, setCurrentLanguage] = useState();
+    const [loading, setLoading] = useState(true);
 
-    const user = {
-        login: 'OliveiraJess',
-        name: 'Jéssica de Oliveira',
-        avatar_url: 'https://avatars.githubusercontent.com/u/87579128?v=4',
-        followers: 30,
-        following: 10,
-        company: null,
-        blog: 'https://www.linkedin.com/in/jessica-de-oliveira/',
-        location: 'Orleans - SC'
-    };
+    useEffect(() => {
+        const loadData = async () => {
+            const [userResponse] = await Promise.all([
+                getUser(`OliveiraJess`)
+            ]);
+
+            setUser(userResponse.data)
+            setLoading(false)
+        }
+        loadData();
+    }, []);
+
+
+    // const user = {
+    //     login: 'OliveiraJess',
+    //     name: 'Jéssica de Oliveira',
+    //     avatar_url: 'https://avatars.githubusercontent.com/u/87579128?v=4',
+    //     followers: 30,
+    //     following: 10,
+    //     company: null,
+    //     blog: 'https://www.linkedin.com/in/jessica-de-oliveira/',
+    //     location: 'Orleans - SC'
+    // };
 
     const repositories = [
         {
@@ -70,6 +85,10 @@ const RepositoriesPage = () => {
     const onFilterClick = (language) => {
         setCurrentLanguage(language);
     };
+
+    if (loading) {
+        return <Loading>Carregando...</Loading>;
+    }
 
     return (
         <Container>
