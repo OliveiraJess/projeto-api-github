@@ -18,14 +18,12 @@ min-height: 100vh;
 
 export const Sidebar = styled.aside`
 background: ${(props) => props.theme.colors.background};
-max-height: 100vh;
 min-width: 20rem;
 overflow-y: hidden;
 `;
 
 export const Main = styled.section`
 background: ${(props) => props.theme.colors.container};
-height: 100vh;
 overflow-y: hidden;
 padding: 40px;
 width: 100%;
