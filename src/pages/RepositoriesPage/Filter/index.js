@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Selector, Cleaner } from './styles';
+import { Container, Selector, Cleaner, Back } from './styles';
 
 const Filter = ({ languages, currentLanguage, onClick }) => {
 
@@ -17,10 +17,16 @@ const Filter = ({ languages, currentLanguage, onClick }) => {
     </Selector>
   ));
 
+  function handleOnClick() {
+    window.history.back()
+
+  }
+
   return (
     <Container>
       {selectors}
       <Cleaner onClick={() => onClick && onClick(undefined)}>Limpar</Cleaner>
+      <Back onClick={handleOnClick}>Voltar</Back>
     </Container>
   );
 };
