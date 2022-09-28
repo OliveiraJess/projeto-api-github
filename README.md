@@ -8,7 +8,7 @@
 </div>
 
 
-<p align="center">Consultas aos respositórios de um usuário do GitHub.</p>
+<p align="center">Consultas aos repositórios de um usuário do GitHub.</p>
 
 
 <h2>🚀 Objetivos</h2>
