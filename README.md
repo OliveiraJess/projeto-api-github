@@ -8,7 +8,7 @@
 </div>
 
 
-<p align="center">Na tela inicial é feito a pesquisa pelo nome do usuário do GitHub que levará a página repositórios e será exibido o perfil do usuário e todos os repositórios dele.</p>
+<p align="center">Consultas aos respositórios de um usuário do GitHub.</p>
 
 
 <h2>🚀 Objetivos</h2>
