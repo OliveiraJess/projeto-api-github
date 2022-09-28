@@ -53,6 +53,7 @@ color: ${(props) => props.theme.colors.text};
 text-align: left;
 padding: 1rem;
 
+
 &:hover {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -69,6 +70,7 @@ border: none;
 color: ${(props) => props.theme.colors.text};
 text-align: left;
 padding: 1rem;
+
 
 &:hover {
     color: rgba(255, 255, 255, 0.5);

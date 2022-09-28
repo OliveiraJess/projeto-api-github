@@ -17,9 +17,8 @@ const Filter = ({ languages, currentLanguage, onClick }) => {
     </Selector>
   ));
 
-  function handleOnClick() {
+  const handleOnClick = () => {
     window.history.back()
-
   }
 
   return (
