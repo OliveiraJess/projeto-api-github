@@ -27,7 +27,7 @@
 
 ```
 - git clone
-- git install
+- npm install
 - npm start
 ```
 <h2>⚙️ Utilizando</h2>
