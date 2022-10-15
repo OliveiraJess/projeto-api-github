@@ -4,7 +4,7 @@
   
 </div>
 <div align="center">
-<img height="400px" src="https://github.com/OliveiraJess/projeto-api-github/blob/main/public/image.png" alt="orleans/sc e orleans/us" />
+<img height="400px" src="https://github.com/OliveiraJess/projeto-api-github/blob/main/public/image.png" alt="Tela de pesquisa por usuários" />
 </div>
 
 
